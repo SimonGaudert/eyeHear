@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "eyehear-195516",
+  "private_key_id": "cad56858f9bec69164d11fe49807e7e2d0d921d0",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDdKGmuivKsiuC0\nnx4j7DAUUaphe5mVRQ065PWw47J2J6waBDigyRSKwSFnF8vLiuPKVI7nOmnnQoJi\nEeHKsUdUG4MQ4xzmPf5ztmz+AjfqNG+9rwchGbVepOEQaUYNqDcde1bNrhJLI9Ws\n5qnOak2lHDinDpzzSgZzm42znod58bR0xxlMa41NuHhC7N/hspIfbhn7mY+rpuqV\nZlz2EVrRJna/tZx9aZEJcHhvsqztvBK1uilNomZCJKjME5Y2vzQ7wGJwDkIzbpZj\nbltdtJYHu6ijnUwU2ts+1S5lgR52yjn9f04ipx/DMnP6PaMlEmTL5Xpq6+SxajGy\nnln4hLF7AgMBAAECggEAD3CIIQqlReNzxYuLcwf4FISqoVMCL8Tm1z/Vx56JC0ba\nW0sEWXRzgS5Z5e5OdXk1Gh9Mhk4/LeLbfGI+m6p3Tgli3VwMD/NJbAwGNunlVaEi\n7e1yt3f2gAZNvU1ELT7oCu0p7Bw+pBoUpRUwMW9qPuBZM8Li6F84hq8LT2KXynnM\nNv7kAQAtg0LfJa4TCT+GdbBME8scqtBNLQhXZB0T+wbUnW3UKg2C6OjySsep1g3i\nju/QN3N57f3sdCTA+WPcW3gRkCn3/46tlNdKuw3/ROVhyEX5uUxg5ddl+Xd6n4MN\ncmQLgc7h9PKWsKb/IX2dqF1FeJT4f0arx93tt0zk6QKBgQDvUFXW+IPTlIRTMqYl\nmCsLz5dblDsyVY5JbQy3bmhWweM+3XKT/4biDf3ZPx8dcyJHPmdw3Z7EodJPkZnJ\nQ0QghrLJNLHC6IliHYse6YMqFAcEqXlJjGAhh5Vf2377My2kDQrIWODFAZQ5Nf4K\nerSSq2W/+VyGIycW98UiBUf+SQKBgQDslAAcmuBiPUZt+9Xo1qqbQ+3PMKoSGGvg\nXBr6dRMRmwDsXeoojboetno26M2JpF5CsE/8qwzZCyNIxNzrbn8JKJO4hM2NNkzt\nTqa8daybCsWj4P93p5PmFFw2ikj9uduRejjfJDvm19tRByEb1JA28YfbMf1seV8G\n9a6iTDOBowKBgQCDhdFHbhl1ROBcoS9y5ehye0qiCBtolGC4tfgRL9qkI7byq932\nvK6yuiHTLb+5/bbPFNrgyswhIRZmqIyucguVHLJRpmYzyn0GsVnuSUPO8mbRBxsj\ncsS6aLuNjSKCiCQDTy+n4EDXxQBjWOsfc0SefxhSo4dYKSWol8993Q0uEQKBgQC9\nm1x/kI1Xjv6cdWMaqrmvmQDGtp0HxbTn60ngA+bVjGJwDlD2UaiipuNKkMjykN7P\nGhnxSnIQngGYd9cLhdKg13mVQDKyA5wh8ZBmqPU+iaKfVlvJXXCGzTieqbQYTlYw\nwUFFbffoaoYm6czaTkGLF4cn4WfYAWps3IkrIGGDewKBgDoUJQPYZ4DaUA0Ld1Oy\n2zUD5fPLVzLSjEIndRfk0UwX48wIRQWRGjciwHWficuE9eHx/wrWl0KXOD5J0xFc\nTuWsGY7kE33Xk9dkIXi6Ky2oa9FnVle6qLRmnCICI2jPMPIZJabYcKfgN4g/BAII\nml9AhTGGSUXcWpnEY19eJDDs\n-----END PRIVATE KEY-----\n",
+  "client_email": "eyehear-serviceaccount@eyehear-195516.iam.gserviceaccount.com",
+  "client_id": "101629317727013124634",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://accounts.google.com/o/oauth2/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/eyehear-serviceaccount%40eyehear-195516.iam.gserviceaccount.com"
+}
