@@ -1,0 +1,273 @@
+
+
+/*Iphone x in side way*/
+@media only screen
+and (max-width : 812px){
+
+    h1{
+        font-size: 40px;
+        text-align: center;
+    }
+    h2{
+        transform: translateX(-13%);
+        margin-bottom: 15px;
+    }
+    .contanct-form{
+        margin-bottom: 55px;
+    }
+    .center-text{
+        font-size: 22px;
+    }
+    .btn-press{
+        width: 350px;
+    }
+    
+    
+   
+}
+
+
+
+
+
+ 
+/* iPads (portrait and landscape) ----------- */
+@media only screen
+and (max-width : 768px){
+
+    h1{
+        font-size: 40px;
+        text-align: center;
+    }
+    
+     h2{
+        transform: translateX(-16%);
+        margin-bottom: 15px;
+    }
+   
+}
+
+
+
+
+/*iPhone 6,7,8 (side-way)*/
+@media only screen
+and (max-width : 667px){
+
+    h1{
+        font-size: 40px;
+        text-align: center;
+    }
+    
+     h2{
+        transform: translateX(-27%);
+        margin-bottom: 15px;
+    }
+    .btn-press{
+        width: 280px;
+    }
+   
+}
+
+
+
+
+
+
+
+
+
+/*iPhone 5 (portrait &amp; landscape)*/
+@media only screen
+and (max-width : 568px){
+     h1{
+        font-size: 40px;
+        text-align: center;
+    }
+    h2{
+        transform: translateX(-40%);
+        margin-bottom: 15px;
+    }
+    
+    .btn-press{
+        width: 245px;
+    }
+  
+    
+}
+ 
+
+
+
+
+
+
+
+
+
+
+
+/*Smartphones (portrait and landscape) ----------- */
+/**/
+
+@media only screen and (max-width : 480px){
+    
+    h1{
+        font-size: 40px;
+        text-align: center;
+    }
+    h2{
+        transform: translateX(-58%);
+        margin-bottom: 15px;
+    }
+    .btn-press{
+        width: 250px;
+        transform: translateX(16%);
+    }
+    .contact-form{
+        width: 350px;
+    }
+    .designer{
+        font-size: 18px;
+    }
+    .rights{
+        font-size: 14px;
+    }
+    
+}
+
+
+/*Nexus 4*/
+@media only screen
+and (max-width : 384px){
+
+     h1{
+        font-size: 40px;
+        text-align: center;
+    }
+    h2{
+        transform: translateX(-87%);
+        margin-bottom: 15px;
+    }
+    .btn-press{
+        width: 250px;
+        transform: translateX(16%);
+    }
+    .contact-form{
+        width: 350px;
+    }
+    .designer{
+        font-size: 18px;
+    }
+    .rights{
+        font-size: 12px;
+    }
+    .btn-press{
+        margin-bottom: 15px;
+    }
+}
+
+
+
+/*Iphone x,iphone6,7,8*/
+@media only screen
+and (max-width : 375px){
+
+     h1{
+        font-size: 40px;
+        text-align: center;
+    }
+    h2{
+        transform: translateX(-87%);
+        margin-bottom: 15px;
+    }
+    .btn-press{
+        width: 250px;
+        transform: translateX(16%);
+    }
+    .contact-form{
+        width: 350px;
+    }
+    .designer{
+        font-size: 18px;
+    }
+    .rights{
+        font-size: 11px;
+    }
+    .btn-press{
+        margin-bottom: 15px;
+    }
+}
+
+
+
+/*small phones like nexus 5*/
+@media only screen
+and (max-width : 360px){
+
+     h1{
+        margin-top: 7px;
+        font-size: 34px;
+        text-align: center;
+    }
+    h2{
+        transform: translateX(-95%);
+        margin-bottom: 15px;
+    }
+
+    .contact-form{
+        width: 285px;
+    }
+    .designer{
+        font-size: 18px;
+    }
+    .rights{
+        font-size: 11px;
+    }
+    .btn-press{
+        width: 210px;
+        transform: translateX(10%);
+        margin-bottom: 12px;
+    }
+}
+
+
+
+
+/*SMall phones like nexus(the one I have) and ihpone*/
+@media only screen
+and (max-width : 320px){
+
+   h1{
+        margin-top: 7px;
+        font-size: 34px;
+        text-align: center;
+    }
+    h2{
+        
+        margin-bottom: 15px;
+    }
+
+    .contact-form{
+        width: 285px;
+    }
+    .designer{
+        font-size: 18px;
+    }
+    .rights{
+        font-size: 9px;
+    }
+    .btn-press{
+        width: 210px;
+        transform: translateX(10%);
+        margin-bottom: 12px;
+    }
+}
+
+
+
+ 
+
+ 
+
+

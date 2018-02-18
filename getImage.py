@@ -1,7 +1,6 @@
 # needed to capture image
 import cv2
 # Import the base64 encoding library to encode image
-import base64
  
 def capture():
 	#Camera 0 = webcam for laptop, this should be changed for USB camera
