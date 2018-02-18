@@ -9,7 +9,7 @@ import json
 import cv2
 import base64
 from getImage import capture
-from textToSpeech import speak
+from naturalSpeech import readText
 
 def sendWebRequest(image_url): 
     url = 'https://vision.googleapis.com/v1p1beta1/images:annotate?key=AIzaSyC5FQW1UL-jZ9xq7ibfh1ZcfCP_6G0XpUA'
@@ -56,4 +56,4 @@ if __name__ == '__main__':
         for i in v_aReadings:
             print (i['description'])
 
-        speak("You are looking at "+ v_aReadings[0][e'description'])
+        readText(("You are looking at "+ v_aReadings[0][e'description']),'en')

@@ -1,8 +1,8 @@
 from gtts import gTTS
 import pygame
 
-def readText(outputText,language):
-	tts = gTTS(text=outputText, lang=language)
+def readText(outputText):
+	tts = gTTS(text=outputText, lang='en')
 	tts.save("./audioOutput.mp3")
 
 	pygame.mixer.init()
