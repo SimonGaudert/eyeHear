@@ -1,40 +1,45 @@
-import io
-import os
-
+# import io
+# import os
 # Imports the Google Cloud client library
-from google.cloud import vision
-from google.cloud.vision import types
-from google.cloud import storage
+# from google.cloud import vision
+# from google.cloud.vision import types
+# from google.cloud import storage 
+import requests
+import json 
 
-def getCredentials():
-	storage_client = storage.Client.from_service_account_json(
-	        'eyeHear-cad56858f9be.json')
-	return storage_client
-	# buckets = list(storage_client.list_buckets())
-	# print(buckets)
+def sendWebRequest(readType, image_url): 
+    url = 'https://vision.googleapis.com/v1p1beta1/images:annotate?key=AIzaSyC5FQW1UL-jZ9xq7ibfh1ZcfCP_6G0XpUA'
+    if readType == "text":
+        type = 'TEXT_DETECTION'
+    elif readType == "image":
+        type = "WEB_DETECTION"
 
-def instantiateClient():
-	# Instantiates a client
-	client = vision.ImageAnnotatorClient(
-		credentials=getCredentials())
+    data = '''{
+          "requests": [
+            {
+              "image": {
+                "source": {
+                  "imageUri": "'''+ image_url + '''"
+                }
+              },
+              "features": [
+                {
+                  "type": "'''+ type + '''"
+                }
+              ]
+            }
+          ]
+        }'''
 
-	# The name of the image file to annotate
-	file_name = os.path.join(
-	    os.path.dirname(__file__),
-	    'images/demo-image.jpg')
+    response = requests.post(url, data=data)
+    print (response)
+    if(response.ok):
+        jData = json.loads(response.content)
+        if readType == 'text':
+            print (jData['responses'][0]['textAnnotations'][0]['description'])
+        elif readType == 'image':
+            print (jData['responses'][0]['webDetection']['webEntities'][0]['description'])
 
-	# Loads the image into memory
-	with io.open(file_name, 'rb') as image_file:
-	    content = image_file.read()
 
-	image = types.Image(content=content)
-
-	# Performs label detection on the image file
-	response = client.label_detection(image=image)
-	# labels = response.label_annotations
-
-	# print('Labels:')
-	# for label in labels:
-	#     print(label.description)
-
-instantiateClient()
+if __name__ == '__main__':
+    sendWebRequest("text", "http://www.lovethispic.com/uploaded_images/39800-I-Can-Put-Text-On-A-Photo-Too.jpg")
