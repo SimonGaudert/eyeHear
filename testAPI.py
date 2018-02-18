@@ -56,4 +56,6 @@ if __name__ == '__main__':
         for i in v_aReadings:
             print (i['description'])
 
-        readText(("You are looking at "+ v_aReadings[0][e'description']),'en')
+        text = "I could be wrong, but my best guess is that you're looking at "+ v_aReadings[0]['description']+" or perhaps maybe " + v_aReadings[1]['description']
+
+        readText(text)

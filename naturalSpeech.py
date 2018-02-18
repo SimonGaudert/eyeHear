@@ -9,4 +9,4 @@ def readText(outputText):
 	pygame.mixer.music.load("audioOutput.mp3")
 	pygame.mixer.music.play()
 	while pygame.mixer.music.get_busy() == True:
-    	continue
+		continue
