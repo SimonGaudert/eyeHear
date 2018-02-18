@@ -1,0 +1,200 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    background-color: #fff;
+    color: #ffffff;
+    font-family: 'Helvetica';
+    
+    font-size: 24px;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+}
+
+.clearfix {zoom: 1;}
+.clearfix:after {
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+p{
+    text-align: left;
+}
+
+/* ----------------------------------------------- */
+/* REUSABLE COMPONENTS */
+/* ----------------------------------------------- */
+
+.header{
+  
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url(img/back.jpg); 
+     
+    background-size: cover; /* lets the backgroun size to cover all of the browser.
+    background-position: center; /* this would center the image on the back ground to the center, so if its on the left side and none of the image objects are showing you use it to show the other objects that are not visible */
+    
+    height: 100vh; /*vh means its 100% off the view-port */
+    
+    background-attachment: fixed;
+}
+
+.row {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.email-error{
+    margin-top: 10px;
+    color: #C23628;
+    text-align: center;
+}
+
+
+/* ----- HEADINGS ----- */
+h1,
+h2,
+ {
+    font-weight: 300;
+    
+    
+}
+
+h1 {
+    margin-top: 50px;;
+    margin-bottom: 20px;
+    color: #ffffff;
+    
+    font-size: 190%;
+    word-spacing: 4px;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 180%;
+    font-weight: bold;
+    word-spacing: 2px;
+    text-align: center;
+    
+    letter-spacing: 1px;
+}
+h2:after {
+    display: block;
+    height: 5px;
+    background-color: #ffffff;
+    content: " ";
+    transform: translateX(1055%);
+    width: 45px;
+    text-align: center;
+    
+}
+
+h3{
+    transform: translateX(-2%);
+    margin-top: 20px;
+    color: #ffffff;
+}
+
+.header-box{
+    
+margin: 0 auto;
+}
+
+.form input,
+.form select{
+    
+    margin-top: 10px;
+    margin-right: 5px;
+    border-radius: 10px;
+    height: 65px;
+    
+}
+.form input{
+    width: 550px;
+    
+}
+.form .email{
+    transform: translateX(-1%);
+}
+input[type=submit] {
+    width: 850px;
+    color: #ffffff;
+    font-size: 110%;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 45px;
+    background-color: #5c6ac4;
+    transform: translateX(-1%);
+    border-color: #5c6ac4;
+}
+
+.form select,input[type="email"]{
+    padding-left: 15px;
+    
+    
+}
+
+.form select{
+    width: 280px;
+    transform: translateX(25%);;
+    appearance:none;
+    cursor:pointer;
+}
+
+.unsub {
+   
+    
+    font-size: 80%;
+    text-align: center;
+    color: #ffffff;
+   
+}
+.unsub p{
+    margin-top: 82px;
+}
+ a:hover,
+ a:active{
+    color: #ff0000;
+    
+}
+
+.btn-submit{
+    margin-bottom: 25px;
+}
+
+
+.button_container,.form{
+    transform: translateX(80%);
+    
+    margin-top: 75px;
+}
+
+
+.contact-form{
+    border: 15px solid rgba(21, 53, 60, 0.44);
+    width: 60%;
+    margin: 0 auto;
+}
+.btn-press{
+    margin-top: 195px;
+    color: #555;
+    transform: translateX(-29%);
+    width: 450px;
+    border-radius: 25px;
+}
+footer{
+    
+    background-color: #454545;
+    padding: 60px;
+    font-size: 80%;
+}
+.center-text{
+    text-align: left;
+}
