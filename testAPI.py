@@ -56,9 +56,12 @@ if __name__ == '__main__':
         for i in v_aReadings:
             if i['description'][0].islower():
                 number_of_labels += 1
-        if v_aReadings[0]['score']>1:
-            text = "I could be wrong, but my best guess is that you're looking at "+ v_aReadings[0]['description']
+
+        if v_aReadings[0]['description'].lower() == "light":
+            text = "Hmmmm, I think I blinked. Please try again."
+        elif v_aReadings[0]['score']>1 or v_aReadings[0]['description'].lower() == v_aReadings[len(v_aReadings)-number_of_labels]['description']:
+            text = "This looks to me like you're looking at a "+ v_aReadings[0]['description']
         else:
-            text = "I could be wrong, but my best guess is that you're looking at "+ v_aReadings[0]['description'] + " or perhaps maybe " + v_aReadings[len(v_aReadings)-number_of_labels]['description']
+            text = "I could be wrong, but my best guess is that you're looking at a "+ v_aReadings[0]['description'] + " or perhaps maybe " + v_aReadings[len(v_aReadings)-number_of_labels]['description']
 
         readText(text)
