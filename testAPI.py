@@ -33,14 +33,13 @@ def sendWebRequest(image_url):
               ]
             }'''
         response = requests.post(url, data=data)
-
-    if(response.ok):
-        jData = json.loads(response.content)
-        if type == "WEB_DETECTION":
-            v_aReadings+=(jData['responses'][0]['webDetection']['webEntities'])
-        elif type == "LABEL_DETECTION":
-            v_aReadings+=(jData['responses'][0]['labelAnnotations'])
-
+        
+        if(response.ok):
+            jData = json.loads(response.content)
+            if type == "WEB_DETECTION":
+                v_aReadings+=(jData['responses'][0]['webDetection']['webEntities'])
+            elif type == "LABEL_DETECTION":
+                v_aReadings+=(jData['responses'][0]['labelAnnotations'])
     return v_aReadings
 
 if __name__ == '__main__':
@@ -53,9 +52,13 @@ if __name__ == '__main__':
         clean_string = encoded_image_string[2:(length-1)]
         v_aReadings = sendWebRequest(clean_string)
 
+        number_of_labels = 0
         for i in v_aReadings:
-            print (i['description'])
-
-        text = "I could be wrong, but my best guess is that you're looking at "+ v_aReadings[0]['description']+" or perhaps maybe " + v_aReadings[1]['description']
+            if i['description'][0].islower():
+                number_of_labels += 1
+        if v_aReadings[0]['score']>1:
+            text = "I could be wrong, but my best guess is that you're looking at "+ v_aReadings[0]['description']
+        else:
+            text = "I could be wrong, but my best guess is that you're looking at "+ v_aReadings[0]['description'] + " or perhaps maybe " + v_aReadings[len(v_aReadings)-number_of_labels]['description']
 
         readText(text)
