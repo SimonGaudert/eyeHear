@@ -55,5 +55,5 @@ if __name__ == '__main__':
 
         for i in v_aReadings:
             print (i['description'])
-        # print (image_desc)
-        # speak("You are looking at "+ image_desc)
+
+        speak("You are looking at "+ v_aReadings[0][e'description'])
