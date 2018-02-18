@@ -13,7 +13,7 @@ def capture():
 	 retval, im = camera.read()
 	 return im
 	
-	ramp_frames = 50 #takes 30 frames for image calibration
+	ramp_frames = 30 #takes 30 frames for image calibration
 	for i in range(ramp_frames):
 		temp = get_image()
 	
