@@ -4,12 +4,15 @@
 # from google.cloud import vision
 # from google.cloud.vision import types
 # from google.cloud import storage 
+from flask import Flask, render_template, request
 import requests
 import json 
 import cv2
 import base64
 from getImage import capture
 from naturalSpeech import readText
+app = Flask(__name__)
+
 
 def sendWebRequest(image_url): 
     url = 'https://vision.googleapis.com/v1p1beta1/images:annotate?key=AIzaSyC5FQW1UL-jZ9xq7ibfh1ZcfCP_6G0XpUA'
@@ -42,7 +45,7 @@ def sendWebRequest(image_url):
                 v_aReadings+=(jData['responses'][0]['labelAnnotations'])
     return v_aReadings
 
-if __name__ == '__main__':
+def main():
     capture()
     with open("./snapShot.png", "rb") as image_file:
         encoded_image = base64.b64encode(image_file.read())
@@ -65,3 +68,16 @@ if __name__ == '__main__':
             text = "I could be wrong, but my best guess is that you're looking at a "+ v_aReadings[0]['description'] + " or perhaps maybe " + v_aReadings[len(v_aReadings)-number_of_labels]['description']
 
         readText(text)
+
+@app.route('/foo', methods=['GET'])
+def parse_request():
+    main()
+    return null
+        
+
+@app.route('/')
+def index():
+   return render_template('index.html')
+
+if __name__ == "__main__":
+    app.run()
