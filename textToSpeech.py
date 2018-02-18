@@ -3,6 +3,6 @@
 
 import os
 
-def speech(text):
+def speak(text):
 	os.system("say " + text) 
 
